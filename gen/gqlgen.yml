@@ -1,0 +1,36 @@
+# Generated with graphql-orm
+
+schema:
+  - schema.graphql
+exec:
+  filename: generated.go
+  package: gen
+model:
+  filename: models_gen.go
+  package: gen
+resolver:
+  filename: resolver.go
+  type: Resolver
+  package: gen
+
+models:
+  
+  Comment:
+    model: github.com/graphql-services/messages/gen.Comment
+    fields:
+  CommentResultType:
+    model: github.com/graphql-services/messages/gen.CommentResultType
+    fields:
+      count:
+        resolver: true
+      items:
+        resolver: true
+  CommentCreateInput:
+    model: "map[string]interface{}"
+  CommentUpdateInput:
+    model: "map[string]interface{}"
+  
+  
+  
+  _Any:
+    model: github.com/graphql-services/messages/gen._Any
